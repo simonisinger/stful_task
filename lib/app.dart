@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stful_task/cache.dart';
 import 'package:stful_task/main_screen.dart';
 
 class App extends StatelessWidget {
@@ -6,6 +7,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MainScreen());
+    return MaterialApp(home: MainScreen(key: mainScreenKey));
   }
 }
